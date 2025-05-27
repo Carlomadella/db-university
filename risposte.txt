@@ -43,3 +43,7 @@ AND `date`= "2020-06-20"
 SELECT * 
 FROM `degrees`
 WHERE `degrees`.`level` = "magistrale"
+
+7.
+SELECT * 
+FROM `departments`
