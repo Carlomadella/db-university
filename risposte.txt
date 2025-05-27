@@ -45,5 +45,10 @@ FROM `degrees`
 WHERE `degrees`.`level` = "magistrale"
 
 7.
-SELECT * 
+SELECT COUNT(*) AS 'departments_number'
 FROM `departments`
+
+8.
+SELECT COUNT(*) AS 'teachers_without_number'
+FROM `teachers`
+WHERE `teachers`.`phone` IS NULL
