@@ -32,3 +32,9 @@ SELECT * , `courses`.`period` , `courses`.`year`
 FROM `courses`
 WHERE `courses`.`year` = 1
 AND `courses`.`period` = "I semestre"
+
+5.
+SELECT * 
+FROM `exams`
+WHERE HOUR(`hour`) >= 14
+AND `date`= "2020-06-20"
