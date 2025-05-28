@@ -81,7 +81,10 @@ DOMANDE SECONDA CONSEGNA:
 RISPOSTE:
 
 1.
-
+SELECT YEAR(enrolment_date) AS anno, COUNT(*) AS numero_iscritti
+FROM students
+GROUP BY YEAR(enrolment_date)
+ORDER BY anno ASC;
 
 2.
 
