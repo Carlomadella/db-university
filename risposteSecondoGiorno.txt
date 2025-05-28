@@ -96,3 +96,7 @@ FROM exam_student
 GROUP BY exam_id
 
 4.
+SELECT COUNT(*) AS totale_corsi , departments.name
+FROM degrees
+JOIN departments ON departments.id = degrees.department_id
+GROUP BY departments.name
