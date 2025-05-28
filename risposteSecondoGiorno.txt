@@ -83,10 +83,12 @@ RISPOSTE:
 1.
 SELECT YEAR(enrolment_date) AS anno, COUNT(*) AS numero_iscritti
 FROM students
-GROUP BY YEAR(enrolment_date)
-ORDER BY anno ASC;
+GROUP BY anno
 
 2.
+SELECT COUNT(*) AS numero_insegnanti, office_address
+FROM teachers
+GROUP BY teachers.office_address
 
 3.
 
